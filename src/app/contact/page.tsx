@@ -10,7 +10,7 @@ export default function Contact(){
     return(
             <div className={`${sans.className} bg-[#000000] lg:h-[92vh] lg:p-[40px] p-[10px] pt-[40px] flex gap-[20px] lg:gap-[80px] justify-center items-center h-auto md:h-[140vh] lg:flex-row flex-col`}>
                 <div className={`bg-[#333333] lg:h-[100%] lg:w-[35%] flex-wrap  rounded-xl p-[20px] flex flex-col justify-top items-center gap-[20px]`}>
-                    <h1 className={`text-left font-500 w-[100%] lg:text-[30px] text-[25px] text-yellow-300`}>Let's Work Together</h1>
+                    <h1 className={`text-left font-500 w-[100%] lg:text-[30px] text-[25px] text-yellow-300`}>Let`&apos;`s Work Together</h1>
                     <p className="text-[#999999] lg:text-[16px] text-[12px]">Lorem ipsum dolor, sit amet consectetur adipisicing fugit rem omnis ut porro odit.</p>
                     <form className="flex flex-col justify-center items-center w-[100%] gap-[15px]">
                         <div className="flex flex-row justify-around w-[100%] h-[40px] items-center gap-[15px]">

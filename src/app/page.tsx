@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex bg-[#000000] text-[#ffffff] h-[92vh] lg:h-[92vh] justify-center items-center lg:p-[40px] flex-col-reverse lg:flex-row md:pl-[4px] md:pr-[4px] md:justify-around md:flex-row">
       <div className="flex flex-col justify-center items-center gap-[7px]">
         <h1 className="lg:w-[70%] w-[95%] md:w-[94%] text-left lg:text-[25px] text-[14px] md:text-[18px] mt-[20px]">Next.JS Developer</h1>
-        <h1 className="lg:w-[70%] w-[95%] md:w-[94%] text-left lg:text-[50px] text-[28px] md:text-[36px] leading-none">Hello I'm</h1>
+        <h1 className="lg:w-[70%] w-[95%] md:w-[94%] text-left lg:text-[50px] text-[28px] md:text-[36px] leading-none">Hello I`&apos;`m</h1>
         <h1 className="lg:w-[70%] w-[95%] md:w-[94%] text-left text-yellow-300 lg:text-[50px] md:text-[36px] text-[28px] sm:leading-snug leading-none overflow-hidden whitespace-nowrap">Aashra Saleem</h1>
         <p className="lg:w-[70%] w-[95%] md:w-[94%] leading-relaxed font-light lg:text-[14px] text-[11px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quisquam temporibus ducimus sunt non consequuntur, molestiae fugit rem omnis ut porro odit.</p>
         <ul className="flex justify-left gap-[10px] items-center mt-[12px] lg:w-[55%] w-[95%] md:w-[100%]">

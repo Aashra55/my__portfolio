@@ -22,7 +22,7 @@ export default function About(){
     },[]
     )
     return(
-        <div className={`${mono.className} h-auto gap-[20px] md:h-[92vh] lg:h-[92vh] bg-black flex flex-col items-center
+        <div className={`${mono.className} h-[92vh] gap-[20px] md:h-[92vh] lg:h-[92vh] bg-black flex flex-col items-center
          justify-center pt-[20px] sm:pt-0 sm:pb-none pb-[20px] md:pt-[20px]`}>
             <Image alt='' src={myimage} className='rounded-full lg:w-[20%] md:w-[40%] initial-position-image transform transition-all translate-y-full opacity-0 duration-500
              w-[60%] border-[2px] border-yellow-300 p-[2px] shadow-lg hover:shadow-[0_0_10px_4px_rgba(252,211,77,0.7)]'/>

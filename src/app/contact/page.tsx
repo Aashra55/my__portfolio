@@ -1,5 +1,7 @@
+'use client'
 import { faPhone, faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect} from "react";
 import {Spline_Sans_Mono} from "@next/font/google";
 const sans = Spline_Sans_Mono({
   subsets:['latin'],
@@ -7,9 +9,22 @@ const sans = Spline_Sans_Mono({
 });
 
 export default function Contact(){
+    useEffect(()=>{
+        const transition = document.querySelectorAll('.position');
+        transition.forEach(e=>{
+            e.classList.remove('translate-y-full','opacity-0');
+            e.classList.add('translate-y-0','opacity-100')
+        });
+        const position = document.querySelectorAll('.initial-position');
+        position.forEach(e=>{
+            e.classList.remove('translate-x-full','opacity-0');
+            e.classList.add('translate-x-0','opacity-100')
+        })
+    })
     return(
             <div className={`${sans.className} bg-[#000000] lg:h-[92vh] lg:p-[40px] p-[10px] pt-[40px] flex gap-[20px] lg:gap-[80px] justify-center items-center h-auto md:h-[140vh] lg:flex-row flex-col`}>
-                <div className={`bg-[#333333] lg:h-[100%] lg:w-[35%] flex-wrap  rounded-xl p-[20px] flex flex-col justify-top items-center gap-[20px]`}>
+                <div className={`position transform transition-all duration-1000 translate-y-full opacity-0
+                    bg-[#333333] lg:h-[100%] lg:w-[35%] flex-wrap  rounded-xl p-[20px] flex flex-col justify-top items-center gap-[20px]`}>
                     <h1 className={`text-left font-500 w-[100%] lg:text-[30px] text-[25px] text-yellow-300`}>Let&apos;s Work Together</h1>
                     <p className="text-[#999999] lg:text-[16px] text-[12px]">Lorem ipsum dolor, sit amet consectetur adipisicing fugit rem omnis ut porro odit.</p>
                     <form className="flex flex-col justify-center items-center w-[100%] gap-[15px]">
@@ -47,23 +62,26 @@ export default function Contact(){
                 </div>
                 <div className=" h-[100%] lg:w-[35%] w-[80%] flex flex-row justify-left items-center gap-[20px] bg-black">
                     <div className="h-[50%] lg:w-[10%] md:w-[10%] w-[12%] flex flex-col items-around justif-evenly gap-[20px] lg:gap-[34px]">
-                        <div className="bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
+                        <div className="transform transition-all translate-x-full opacity-0 duration-1000 initial-position
+                        bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
                             <FontAwesomeIcon icon={faPhone} className="text-yellow-300 text-white w-[80%] lg:h-[25px] h-[20px]"/></div>
-                        <div className="bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
+                        <div className="transform transition-all translate-x-full opacity-0 duration-700 initial-position
+                        bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
                             <FontAwesomeIcon icon={faLocationDot} className="text-yellow-300 text-white w-[80%] lg:h-[25px] h-[20px]"/></div>
-                        <div className="bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
+                        <div className="transform transition-all translate-x-full opacity-0 duration-400 initial-position
+                        bg-[#777777] w-[100%] h-[35px] md:h-[50px] lg:h-[50px] flex items-center justify-center rounded-lg">
                             <FontAwesomeIcon icon={faEnvelope} className="text-yellow-300 text-white w-[80%] lg:h-[25px] h-[20px]"/></div>
                     </div>
                     <div className="h-[50%] lg:w-[50%] w-[80%] flex flex-col items-around justif-evenly gap-[20px] lg:gap-[34px]">
-                        <div>
+                        <div className="transform transition-all translate-x-full opacity-0 duration-1000 initial-position">
                             <p className="text-[#777777]">Phone</p>
                             <p className="text-[#ffffff]">(+48) 321 456 875</p>
                         </div>
-                        <div>
+                        <div className="transform transition-all translate-x-full opacity-0 duration-700 initial-position">
                             <p className="text-[#777777]">Email</p>
                             <p className="text-[#ffffff]">youremail@gmail.com</p>
                         </div>
-                        <div>
+                        <div className="transform transition-all translate-x-full opacity-0 duration-400 initial-position">
                             <p className="text-[#777777]">Address</p>
                             <p className="text-[#ffffff]">ABC Corner, XYZ Town 1234</p>
                         </div>

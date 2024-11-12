@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {Spline_Sans_Mono} from "@next/font/google";
-const spline = Spline_Sans_Mono({
+const Spline = Spline_Sans_Mono({
   subsets:['latin'],
   weight:['400']
 });
@@ -8,7 +8,7 @@ const spline = Spline_Sans_Mono({
 
 export default function Header(){
     return(
-        <div className={spline.className}>
+        <div className={Spline.className}>
         <div className="flex justify-around bg-black text-white lg:h-[60px] h-[40px] items-center w-[100vw] lg:w-[98.9vw]">
             <h1 className="text-yellow-300 lg:text-[28px] text-[18px]"><Link href={'/'}>Aashra.</Link></h1>
             <ul className="flex justify-around inherit w-[60%] lg:text-[18px] text-[11px] md:text-[14px] lg:w-[25%] md:w-[40%]">
